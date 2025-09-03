@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Licenciatura en Ingeniería en Nanotecnología - UAEH</title>
   <link rel="icon" href="assets/logonano.png">
+  <meta name="description" content="Licenciatura en Ingeniería en Nanotecnología de la UAEH: plan de estudios, campo laboral, mercado y panorama geográfico con oportunidades reales de empleo.">
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
     body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;line-height:1.6;color:#333;overflow-x:hidden}
@@ -26,7 +27,7 @@
     .nav-menu a::after{content:'';position:absolute;width:0;height:2px;bottom:-5px;left:0;background:var(--gradient-primary);transition:width .3s ease}
     .nav-menu a:hover::after{width:100%}
     .hero{height:100vh;background:var(--gradient-primary);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
-    .hero::before{content:'';position:absolute;inset:0;background:url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><defs><pattern id=%22fullerenes%22 x=%220%22 y=%220%22 width=%2225%22 height=%2225%22 patternUnits=%22userSpaceOnUse%22><g stroke=%22rgba(255,255,255,0.1)%22 stroke-width=%220.3%22 fill=%22none%22><polygon points=%2212.5,5 17.5,8 17.5,12 12.5,15 7.5,12 7.5,8%22/><circle cx=%2212.5%22 cy=%2210%22 r=%221%22 fill=%22rgba(255,255,255,0.05)%22/></g></pattern></defs><rect width=%22100%25%22 height=%22100%25%22 fill=%22url(%23fullerenes)%22/></svg>') repeat;animation:atomicFloat 25s linear infinite}
+    .hero::before{content:'';position:absolute;inset:0;background:url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><defs><pattern id=%22fullerenes%22 x=%220%22 y=%220%22 width=%2225%22 height=%2225%22 patternUnits=%22userSpaceOnUse%22><g stroke=%22rgba(255,255,255,0.1)%22 stroke-width=%220.3%22 fill=%22none%22><polygon points=%2212.5,5 17.5,8 17.5,12 12.5,15 7.5,12 7.5,8%22/><circle cx=%2212.5%22 cy=%2210%22 r=%221%22 fill=%22rgba(255,255,255,0.05)%22/></g></pattern></defs><rect width=%22100%22 height=%22100%22 fill=%22url(%23fullerenes)%22/></svg>') repeat;animation:atomicFloat 25s linear infinite}
     @keyframes atomicFloat{0%{transform:translate(0,0) rotate(0)}100%{transform:translate(-25px,-25px) rotate(360deg)}}
     .hero-content{text-align:center;z-index:2;max-width:900px;padding:0 20px}
     .hero-badge{background:rgba(255,255,255,.15);color:#fff;padding:8px 20px;border-radius:25px;font-size:.9rem;font-weight:600;display:inline-block;margin-bottom:25px;backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.2);animation:slideInUp 1s ease-out}
@@ -44,7 +45,7 @@
     .uaeh-info{background:var(--light-gray);margin:0 -20px;padding:80px 20px}
     .uaeh-container{max-width:1400px;margin:0 auto;display:grid;grid-template-columns:1fr 2fr;gap:60px;align-items:center}
     .uaeh-badge{background:var(--gradient-primary);color:#fff;padding:40px;border-radius:25px;text-align:center;box-shadow:0 15px 40px rgba(0,0,0,.1)}
-    .uaeh-badge img.badge-logo{height:100px;width:auto;display:block;margin:0 auto 14px;filter:drop-shadow(0 8px 18px rgba(0,0,0,.25))}
+    .uaeh-badge h3{font-size:2.2rem;font-weight:800;margin-bottom:15px}
     .uaeh-badge p{font-size:1.1rem;opacity:.95}
     .program-description{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:40px;margin-top:60px}
     .description-card{background:#fff;padding:40px;border-radius:20px;box-shadow:0 10px 40px rgba(0,0,0,.08);transition:transform .3s ease;border-top:4px solid var(--primary-orange)}
@@ -70,7 +71,7 @@
     .field-card:hover{transform:translateY(-8px) scale(1.02);box-shadow:0 20px 50px rgba(0,0,0,.15)}
     .field-icon{width:80px;height:80px;background:var(--gradient-primary);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 25px;color:#fff;font-size:2rem}
 
-    /* Admission timeline step numbers */
+    /* NEW: Step number style for Admission timeline */
     .admission-timeline{max-width:900px;margin:50px auto 0}
     .timeline-item{display:flex;align-items:flex-start;gap:30px;margin-bottom:40px;padding:30px;background:#fff;border-radius:20px;box-shadow:0 8px 25px rgba(0,0,0,.08);transition:all .3s ease;position:relative}
     .timeline-item:hover{transform:translateX(10px);box-shadow:0 15px 40px rgba(0,0,0,.15)}
@@ -82,6 +83,19 @@
     .timeline-content h4{color:var(--primary-red);font-size:1.2rem;font-weight:700;margin-bottom:10px}
     .timeline-date{background:var(--gradient-secondary);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-weight:700;font-size:.9rem;margin-bottom:10px}
 
+    .insight{margin-top:60px}
+    .insight-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
+    .insight-card{background:#fff;padding:28px;border-radius:18px;box-shadow:0 8px 28px rgba(0,0,0,.08);border-top:4px solid var(--primary-purple)}
+    .insight-card h4{margin-bottom:10px;color:var(--dark-gray);font-size:1.15rem}
+    .muted{color:#6b7280;font-size:.95rem}
+    .chip{display:inline-block;padding:6px 12px;border-radius:999px;background:rgba(166,99,204,.1);border:1px solid rgba(166,99,204,.25);font-size:.85rem;margin-right:8px;margin-bottom:8px}
+    .bar-chart{display:grid;gap:12px;margin-top:15px}
+    .bar-row{display:flex;align-items:center;gap:12px}
+    .bar-label{min-width:180px;font-weight:600;color:#374151}
+    .bar-track{flex:1;height:10px;background:#f0f0f5;border-radius:999px;overflow:hidden;position:relative}
+    .bar-fill{height:100%;width:0;background:var(--gradient-secondary);border-radius:999px;transition:width 1.2s ease}
+    .bar-value{min-width:48px;text-align:right;font-weight:700;color:#111827}
+    .note{font-size:.85rem;color:#6b7280;margin-top:10px}
     .contact{background:var(--gradient-primary);margin:100px -20px 0;padding:80px 20px;color:#fff;position:relative;overflow:hidden}
     .contact::before{content:'';position:absolute;inset:0;background:url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><g opacity=%220.1%22><polygon points=%2225,15 35,20 35,30 25,35 15,30 15,20%22 fill=%22none%22 stroke=%22white%22/><polygon points=%2275,45 85,50 85,60 75,65 65,60 65,50%22 fill=%22none%22 stroke=%22white%22/></g></svg>') repeat}
     .contact-content{max-width:1400px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;position:relative;z-index:2}
@@ -101,7 +115,6 @@
       .contact-content{grid-template-columns:1fr}.semester-grid{grid-template-columns:1fr}
       .hamburger{display:flex}.bar-label{min-width:130px;font-size:.9rem}.logo-img{height:44px}
       .timeline-number{width:76px;height:76px;font-size:1.8rem;border-width:5px}
-      .uaeh-badge img.badge-logo{height:84px}
     }
     .fade-in{opacity:0;transform:translateY(30px);transition:all .6s ease}
     .fade-in.visible{opacity:1;transform:translateY(0)}
@@ -110,6 +123,7 @@
     .download-btn:hover{transform:translateY(-3px);box-shadow:0 8px 25px rgba(0,0,0,.3)}
     .hamburger{display:none;flex-direction:column;cursor:pointer;padding:10px}
     .hamburger span{width:25px;height:3px;background:var(--primary-orange);margin:3px 0;transition:.3s;border-radius:2px}
+    .small-note{font-size:.85rem;opacity:.85;margin-top:8px}
   </style>
 </head>
 <body>
@@ -124,6 +138,7 @@
         <li><a href="#programa">Programa</a></li>
         <li><a href="#plan-estudios">Plan de Estudios</a></li>
         <li><a href="#campo-laboral">Campo Laboral</a></li>
+        <li><a href="#mercado">Mercado</a></li>
         <li><a href="#admision">Admisión</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
@@ -146,8 +161,7 @@
   <div class="uaeh-info">
     <div class="uaeh-container">
       <div class="uaeh-badge fade-in">
-        <!-- Aquí sustituimos "UAEH - ESAp" por el logo -->
-        <img src="assets/logonano.png" alt="Nano-UAEH" class="badge-logo">
+        <h3>UAEH - ESAp</h3>
         <p>Escuela Superior de Apan<br>Innovación • Excelencia • Compromiso Social</p>
       </div>
       <div class="fade-in">
@@ -288,6 +302,31 @@
           </ul>
         </div>
       </div>
+
+      <div style="text-align:center;margin-top:50px;">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:30px;max-width:800px;margin:0 auto;">
+          <div style="background:#fff;padding:25px;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,.1);">
+            <h4 style="color:var(--primary-orange);font-size:1.1rem;margin-bottom:10px;">Núcleo Básico</h4>
+            <p style="font-size:1.5rem;font-weight:700;color:var(--dark-gray);">14.13%</p>
+            <p style="font-size:.9rem;color:#666;">8 asignaturas</p>
+          </div>
+          <div style="background:#fff;padding:25px;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,.1);">
+            <h4 style="color:var(--primary-red);font-size:1.1rem;margin-bottom:10px;">Núcleo Profesional</h4>
+            <p style="font-size:1.5rem;font-weight:700;color:var(--dark-gray);">54.13%</p>
+            <p style="font-size:.9rem;color:#666;">26 asignaturas</p>
+          </div>
+          <div style="background:#fff;padding:25px;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,.1);">
+            <h4 style="color:var(--primary-purple);font-size:1.1rem;margin-bottom:10px;">Núcleo Terminal</h4>
+            <p style="font-size:1.5rem;font-weight:700;color:var(--dark-gray);">20.86%</p>
+            <p style="font-size:.9rem;color:#666;">11 asignaturas</p>
+          </div>
+          <div style="background:#fff;padding:25px;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,.1);">
+            <h4 style="color:var(--accent-orange);font-size:1.1rem;margin-bottom:10px;">Núcleo Complementario</h4>
+            <p style="font-size:1.5rem;font-weight:700;color:var(--dark-gray);">10.86%</p>
+            <p style="font-size:.9rem;color:#666;">14 asignaturas</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -305,6 +344,64 @@
       <div class="field-card fade-in"><div class="field-icon">🌍</div><h3>Medio Ambiente</h3><p>Tecnologías de remediación, filtros avanzados para agua y aire, y materiales sostenibles</p></div>
       <div class="field-card fade-in"><div class="field-icon">🧬</div><h3>Biotecnología e Informática</h3><p>Biosensores, dispositivos lab-on-chip y sistemas de computación bioinspirados</p></div>
     </div>
+
+    <div class="insight fade-in" style="margin-top:50px;">
+      <h3 class="section-subtitle" style="margin-bottom:20px">
+        El mercado laboral es <strong>dinámico y multidisciplinario</strong>, con demanda creciente impulsada por avances científicos y su convergencia con salud, electrónica y energía. La mayoría de los puestos se concentra en <strong>I+D</strong>, y también hay oportunidades en manufactura, calidad, soporte técnico, academia y roles regulatorios.
+      </h3>
+    </div>
+  </section>
+
+  <section id="mercado">
+    <h2 class="section-title fade-in">Mercado y Oportunidades</h2>
+    <p class="section-subtitle fade-in">Dónde trabajan los nanotecnólogos y qué tipos de roles existen</p>
+
+    <div class="insight-grid">
+      <div class="insight-card fade-in">
+        <h4>Roles por sector industrial 🔬</h4>
+        <p class="muted">Participación estimada por sectores (base 2024)</p>
+
+        <div class="bar-chart" id="chart-sectores">
+          <div class="bar-row"><div class="bar-label">Medicina y Farmacéutica</div><div class="bar-track"><div class="bar-fill" data-value="34"></div></div><div class="bar-value">34%</div></div>
+          <div class="bar-row"><div class="bar-label">Electrónica y Semiconductores</div><div class="bar-track"><div class="bar-fill" data-value="29"></div></div><div class="bar-value">29%</div></div>
+          <div class="bar-row"><div class="bar-label">Materiales Avanzados y Química</div><div class="bar-track"><div class="bar-fill" data-value="17"></div></div><div class="bar-value">17%</div></div>
+          <div class="bar-row"><div class="bar-label">Energía y Medio Ambiente</div><div class="bar-track"><div class="bar-fill" data-value="12"></div></div><div class="bar-value">12%</div></div>
+          <div class="bar-row"><div class="bar-label">Consumo, Automotriz y Aeroespacial</div><div class="bar-track"><div class="bar-fill" data-value="8"></div></div><div class="bar-value">8%</div></div>
+        </div>
+        <p class="note">La nanomedicina y biomateriales lideran en ingresos (34% en 2024). En electrónica, los fabricantes concentraron ~28% de la demanda de soluciones.</p>
+      </div>
+
+      <div class="insight-card fade-in">
+        <h4>Tipos de puestos 💼</h4>
+        <p class="muted">Distribución aproximada por función</p>
+        <div class="bar-chart" id="chart-roles">
+          <div class="bar-row"><div class="bar-label">Investigación y Desarrollo (I+D)</div><div class="bar-track"><div class="bar-fill" data-value="45"></div></div><div class="bar-value">35–55%</div></div>
+          <div class="bar-row"><div class="bar-label">Procesos y Manufactura</div><div class="bar-track"><div class="bar-fill" data-value="22"></div></div><div class="bar-value">20–25%</div></div>
+          <div class="bar-row"><div class="bar-label">Calidad y Caracterización</div><div class="bar-track"><div class="bar-fill" data-value="12"></div></div><div class="bar-value">10–15%</div></div>
+          <div class="bar-row"><div class="bar-label">Aplicaciones y Soporte Técnico</div><div class="bar-track"><div class="bar-fill" data-value="8"></div></div><div class="bar-value">5–10%</div></div>
+          <div class="bar-row"><div class="bar-label">Académicos, Consultoría y Regulatorios</div><div class="bar-track"><div class="bar-fill" data-value="10"></div></div><div class="bar-value">5–15%</div></div>
+        </div>
+        <div style="margin-top:12px">
+          <span class="chip">Microscopía AFM/SEM</span>
+          <span class="chip">Síntesis & Escalado</span>
+          <span class="chip">ISO/ICH/Regulatorio</span>
+          <span class="chip">Modelado & Simulación</span>
+          <span class="chip">Transferencia tecnológica</span>
+        </div>
+      </div>
+
+      <div class="insight-card fade-in">
+        <h4>Panorama geográfico 🗺️</h4>
+        <p class="muted">Participación estimada del mercado por región (2024)</p>
+        <div class="bar-chart" id="chart-regiones">
+          <div class="bar-row"><div class="bar-label">América del Norte</div><div class="bar-track"><div class="bar-fill" data-value="36"></div></div><div class="bar-value">36%</div></div>
+          <div class="bar-row"><div class="bar-label">Asia–Pacífico</div><div class="bar-track"><div class="bar-fill" data-value="31"></div></div><div class="bar-value">31%</div></div>
+          <div class="bar-row"><div class="bar-label">Europa</div><div class="bar-track"><div class="bar-fill" data-value="27"></div></div><div class="bar-value">27%</div></div>
+          <div class="bar-row"><div class="bar-label">Resto del mundo</div><div class="bar-track"><div class="bar-fill" data-value="6"></div></div><div class="bar-value">6%</div></div>
+        </div>
+        <p class="note">Norteamérica lidera en innovación y patentes; Asia–Pacífico en manufactura y creación de empleo; Europa destaca en automotriz, química y dispositivos médicos.</p>
+      </div>
+    </div>
   </section>
 
   <section id="admision">
@@ -315,6 +412,12 @@
       <div class="timeline-item fade-in"><div class="timeline-number">2</div><div class="timeline-content"><div class="timeline-date">Requisitos Académicos</div><h4>Documentación requerida</h4><p>Bachillerato concluido antes del 19 de enero 2026, promedio mínimo de 7.0, y no haber causado baja definitiva de ningún programa en la UAEH.</p></div></div>
       <div class="timeline-item fade-in"><div class="timeline-number">3</div><div class="timeline-content"><div class="timeline-date">27 de noviembre 2025</div><h4>Examen de admisión</h4><p>Presenta el examen que evalúa comprensión lectora, redacción indirecta, pensamiento matemático y módulos disciplinares específicos para ingeniería.</p></div></div>
       <div class="timeline-item fade-in"><div class="timeline-number">4</div><div class="timeline-content"><div class="timeline-date">1 de diciembre 2025 - 19:00 hrs</div><h4>Resultados y matrícula</h4><p>Consulta tus resultados en la página web de la UAEH y, en caso de ser aceptado, completa tu proceso de matrícula para comenzar tu formación.</p></div></div>
+    </div>
+    <div style="text-align:center;margin-top:50px;padding:35px;background:#fff;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.1);border-left:5px solid var(--primary-orange);">
+      <h4 style="color:var(--primary-red);margin-bottom:15px;font-size:1.3rem;">¿Tienes el perfil?</h4>
+      <p style="color:#666;margin-bottom:20px;">Necesitas sólidos conocimientos en <strong>matemáticas, física y química</strong>, así como habilidades de comunicación, trabajo en equipo y valores de responsabilidad y honestidad.</p>
+      <a href="#contacto" class="download-btn">💬 Resuelve tus dudas</a>
+      <p class="small-note">*Fechas sujetas a cambios por la institución.</p>
     </div>
   </section>
 
@@ -339,7 +442,6 @@
         </div>
       </div>
 
-      <!-- Formulario que envía a esap_ing.nanotecnologia@uaeh.edu.mx -->
       <form class="contact-form fade-in" action="https://formsubmit.co/esap_ing.nanotecnologia@uaeh.edu.mx" method="POST">
         <h3 style="margin-bottom:30px;font-size:1.6rem;font-weight:700;">Solicita información personalizada</h3>
         <div class="form-group"><input type="text" name="nombre" placeholder="Nombre completo" required></div>
@@ -359,7 +461,7 @@
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_captcha" value="false">
         <button type="submit" class="submit-btn">Enviar solicitud</button>
-        <p style="font-size:.85rem;opacity:.85;margin-top:8px;">Al enviar aceptas ser contactado por la coordinación del programa.</p>
+        <p class="small-note">Al enviar aceptas ser contactado por la coordinación del programa.</p>
       </form>
     </div>
   </section>
@@ -386,7 +488,7 @@
     },{threshold:0.1, rootMargin:'0px 0px -50px 0px'});
     document.querySelectorAll('.fade-in').forEach(el=>fadeObserver.observe(el));
 
-    // Stats animation
+    // Counters
     function animateStats(){
       const stats=document.querySelectorAll('.stat-item h3');
       stats.forEach(stat=>{
@@ -407,7 +509,16 @@
     },{threshold:0.5});
     const statsSection=document.querySelector('.stats'); if(statsSection) statsObserver.observe(statsSection);
 
-    // Mobile menu
+    // Animate bar charts when visible
+    function animateBars(container){
+      container.querySelectorAll('.bar-fill').forEach(bar=>{ const value = parseFloat(bar.getAttribute('data-value')) || 0; requestAnimationFrame(()=>{ bar.style.width = value + '%'; }); });
+    }
+    const chartsObserver = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{ if(entry.isIntersecting){ animateBars(entry.target); chartsObserver.unobserve(entry.target); } });
+    },{threshold:0.3});
+    document.querySelectorAll('#chart-sectores, #chart-roles, #chart-regiones').forEach(ch=>chartsObserver.observe(ch));
+
+    // Mobile menu toggle
     document.querySelector('.hamburger')?.addEventListener('click',()=>{
       const navMenu=document.querySelector('.nav-menu');
       navMenu.classList.toggle('active');
